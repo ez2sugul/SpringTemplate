@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.5.0.201404011509-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[true]]></enableImports>
+	<configs>
+		<config>java:com.woniper.hibernate.config.HibernateConfiguration</config>
+	</configs>
+	<autoconfigs>
+		<config>java:com.woniper.hibernate.config.WebAppInitializer</config>
+		<config>java:com.woniper.hibernate.config.WebAppConfiguration</config>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
