@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="hello">
+	<select id="Spring" resultType="String">
+		select 'helloSpring~'
+	</select>
+
+	<select id="getList" resultType="com.woniper.spring.dto.UserDto">
+		SELECT
+		id, password, last_login
+		FROM
+		main_solbizuser
+	</select>
+	
+	<insert id="memberSign" parameterType="com.woniper.spring.dto.MemberDto">
+		insert into member(member_id, password, member_name, phone_number, company_name, address, email)
+		values(#{memberId},#{password},#{memberName},#{phoneNumber},#{companyName},#{address},#{email})
+	</insert>
+</mapper>
